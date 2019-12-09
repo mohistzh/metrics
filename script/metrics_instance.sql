@@ -1,11 +1,11 @@
 CREATE TABLE `metrics_instance` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `type` varchar(20) DEFAULT NULL,
-  `url_connection` text,
+  `host` varchar(100) DEFAULT NULL,
+  `port` int(11) DEFAULT NULL,
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
   `metrics_api` text,
-  `status` tinyint(1) DEFAULT NULL COMMENT '(-1, 0, 1)',
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
