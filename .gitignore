@@ -22,6 +22,8 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
+generated/
+generated_tests/
 
 ##############################
 ## Gradle
