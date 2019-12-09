@@ -127,5 +127,6 @@
   <module>metrics-storage</module>
   <module>metrics-collector</module>
   <module>metrics-transactor</module>
+  <module>metrics-model</module>
 </modules>
 </project>
