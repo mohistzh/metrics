@@ -16,13 +16,14 @@ import java.util.Date;
 @EqualsAndHashCode(of = {"type", "host", "port", "username", "password", "metricsAPI"})
 public class MetricsInstance {
     private int id;
-    private MetricsSourceTypeEnum sourceType;
+    private MetricsSourceTypeEnum type;
     public MetricsInstance(int id) {
         this.id = id;
     }
     @NotNull(message = "host can not be empty")
     private String host;
     private int port;
+    private String path;
     private String username;
     private String password;
     private String metricsAPI;

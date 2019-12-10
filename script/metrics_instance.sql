@@ -3,6 +3,7 @@ CREATE TABLE `metrics_instance` (
   `type` varchar(20) DEFAULT NULL,
   `host` varchar(100) DEFAULT NULL,
   `port` int(11) DEFAULT NULL,
+  `path` varchar(100) DEFAULT NULL,
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
   `metrics_api` text,

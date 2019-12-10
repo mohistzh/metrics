@@ -67,7 +67,7 @@ public class DataPointMapper {
             }
             Point point = builder.tag("host", metricsInstance.getHost()).
                     tag("port", String.valueOf(metricsInstance.getPort())).
-                    tag("type", metricsInstance.getSourceType().toString()).
+                    tag("type", metricsInstance.getType().toString()).
                     addField("value", dataPoint.getValue()).
                     time(dataPoint.getTimestamp(), TimeUnit.MILLISECONDS).build();
 
