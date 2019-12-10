@@ -8,7 +8,6 @@ import org.apache.commons.collections4.MapUtils;
 import org.influxdb.InfluxDB;
 import org.influxdb.dto.BatchPoints;
 import org.influxdb.dto.Point;
-import org.influxdb.impl.TimeUtil;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
