@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="me.mohistzh.metrics.storage.mapper.MetricsInstanceMapper">
+<mapper namespace="me.mohistzh.metrics.storage.rd.mapper.MetricsInstanceMapper">
 
     <select id="getAllInstances" resultType="me.mohistzh.metrics.model.pojo.MetricsInstance">
         SELECT *

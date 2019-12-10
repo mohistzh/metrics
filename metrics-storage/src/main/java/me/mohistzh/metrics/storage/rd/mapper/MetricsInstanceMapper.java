@@ -1,4 +1,4 @@
-package me.mohistzh.metrics.storage.mapper;
+package me.mohistzh.metrics.storage.rd.mapper;
 
 import me.mohistzh.metrics.model.pojo.MetricsInstance;
 import org.apache.ibatis.annotations.Param;
