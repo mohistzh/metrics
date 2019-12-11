@@ -1,6 +1,6 @@
 spring:
   influx:
-    url: *
+    url: http://localhost:8086
     password: mohistzh
     user: mohistzh
     database: metrics

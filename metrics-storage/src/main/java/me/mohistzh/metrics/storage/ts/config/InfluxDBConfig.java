@@ -22,7 +22,7 @@ public class InfluxDBConfig {
         return InfluxDBFactory.connect(url, username, password);
     }
 
-    @Bean("coreInflux")
+    @Bean
     public DataPointMapper coreInflux(@Value("${influx.url}") String url,
                                       @Value("${influx.username}") String username,
                                       @Value("${influx.password}") String password,
