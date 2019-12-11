@@ -114,5 +114,6 @@
   <module>metrics-collector</module>
   <module>metrics-transactor</module>
   <module>metrics-model</module>
+    <module>metrics-api</module>
 </modules>
 </project>
