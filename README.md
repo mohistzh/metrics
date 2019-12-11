@@ -6,8 +6,9 @@ Metrics are a measurement at a point in time for the system. This unit of measur
 
 This project was build for enabling developers easy to monitor their systems.
 
+## How the system works
 
 
-
+![oops](https://raw.githubusercontent.com/mohistzh/metrics/master/static/Workflow.jpg)
 
 
