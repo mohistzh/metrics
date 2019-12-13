@@ -121,5 +121,7 @@
   <module>metrics-transactor</module>
   <module>metrics-model</module>
     <module>metrics-api</module>
+  <module>metrics-queue-transactor</module>
+  <module>metrics-kafka-consumer</module>
 </modules>
 </project>
