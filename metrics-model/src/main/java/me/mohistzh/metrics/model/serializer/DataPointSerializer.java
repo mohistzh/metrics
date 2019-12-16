@@ -3,6 +3,7 @@ package me.mohistzh.metrics.model.serializer;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
+import com.google.common.util.concurrent.AtomicDouble;
 import me.mohistzh.metrics.model.pojo.DataPoint;
 import org.apache.kafka.common.serialization.Deserializer;
 import org.springframework.util.StringUtils;
@@ -19,6 +20,7 @@ public class DataPointSerializer implements Deserializer<DataPoint> {
 
     private String encoding = "UTF8";
 
+    public static AtomicDouble samplingRate = new AtomicDouble(0.001);
 
     @Override
     public void configure(Map<String, ?> configs, boolean isKey) {
