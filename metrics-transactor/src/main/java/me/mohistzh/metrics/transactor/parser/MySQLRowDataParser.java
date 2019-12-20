@@ -3,6 +3,7 @@ package me.mohistzh.metrics.transactor.parser;
 import com.google.common.collect.Lists;
 import me.mohistzh.metrics.model.pojo.CommonMetricsData;
 import me.mohistzh.metrics.model.pojo.DataPoint;
+import org.apache.commons.lang3.math.NumberUtils;
 
 import java.util.List;
 
@@ -20,7 +21,7 @@ public class MySQLRowDataParser implements BasicDataParser<List<CommonMetricsDat
             return dataPoints;
         }
         for (CommonMetricsData entry : input) {
-            if (!isNumberic(entry.getValue())) {
+            if (!NumberUtils.isNumber(entry.getValue())) {
                 continue;
             }
             DataPoint dataPoint = new DataPoint();
@@ -29,12 +30,5 @@ public class MySQLRowDataParser implements BasicDataParser<List<CommonMetricsDat
             dataPoints.add(dataPoint);
         }
         return dataPoints;
-    }
-
-    private boolean isNumberic(final String input) {
-        if (input == null || "".equals(input)) {
-            return false;
-        }
-        return input.chars().allMatch(Character::isDigit);
     }
 }

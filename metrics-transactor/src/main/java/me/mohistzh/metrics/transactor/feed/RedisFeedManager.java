@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  **/
 @Slf4j
 @Component
-public class RedisFeedManager extends AbstractFeedManager{
+public class RedisFeedManager extends AbstractFeedManager<Jedis>{
 
     // caching Jedis instance for 15min
     private LoadingCache<MetricsInstance, Jedis> jedisLoadingCache = CacheBuilder.newBuilder()
