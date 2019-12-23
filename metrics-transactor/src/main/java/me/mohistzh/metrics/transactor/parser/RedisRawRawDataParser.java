@@ -16,7 +16,7 @@ import java.util.List;
  **/
 @Slf4j
 @Component
-public class RedisRowDataParser  implements BasicDataParser<String>{
+public class RedisRawRawDataParser implements BasicRawDataParser<String> {
 
     private static final String PREFIX = "redis.";
     private static final String SUFFIX = ".counter";

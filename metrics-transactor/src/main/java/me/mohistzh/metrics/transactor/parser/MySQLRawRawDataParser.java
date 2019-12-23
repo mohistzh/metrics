@@ -12,7 +12,7 @@ import java.util.List;
  * @Author Jonathan
  * @Date 2019/12/10
  **/
-public class MySQLRowDataParser implements BasicDataParser<List<CommonMetricsData>> {
+public class MySQLRawRawDataParser implements BasicRawDataParser<List<CommonMetricsData>> {
     @Override
     public List<DataPoint> parse(List<CommonMetricsData> input) {
 
